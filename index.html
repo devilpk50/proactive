@@ -692,7 +692,7 @@
                 <div class="row gy-4">
 
                   <div class="col-md-6">
-                    <input type="text" name="name" class="form-control" placeholder="Your Full Name" required="">
+                    <input type="text" name="name" class="form-control" placeholder="Your Full Name" required="" minlength="2" pattern="^[a-zA-Z\s\-\.]+$" title="Please enter a valid name (letters, spaces, hyphens, and periods only)">
                   </div>
 
                   <div class="col-md-6 ">
@@ -702,15 +702,15 @@
                   </div>
 
                   <div class="col-md-6">
-                    <input type="tel" class="form-control" name="contact_no" placeholder="Contact No." required="">
+                    <input type="tel" class="form-control" name="contact_no" placeholder="Contact No." required="" pattern="^\+?[0-9\s\-\(\)]{7,15}$" title="Please enter a valid phone number (e.g. +1 234 567 8900)">
                   </div>
 
                   <div class="col-md-6">
-                    <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                    <input type="text" class="form-control" name="subject" placeholder="Subject" required="" minlength="3" title="Subject must be at least 3 characters long">
                   </div>
 
                   <div class="col-12">
-                    <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                    <textarea class="form-control" name="message" rows="6" placeholder="Message" required="" minlength="10" title="Message must be at least 10 characters long"></textarea>
                   </div>
 
                   <div class="col-12 text-center">
