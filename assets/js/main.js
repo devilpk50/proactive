@@ -9,6 +9,12 @@
 (function() {
   "use strict";
 
+  // Force page to start at top on refresh
+  if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+  }
+  window.scrollTo(0, 0);
+
   /**
    * Apply .scrolled class to the body as the page is scrolled down
    */
